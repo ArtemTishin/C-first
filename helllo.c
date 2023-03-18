@@ -2,6 +2,7 @@
 
 int main(void)
 {
+    printf("Hello");
 
     /*
     int goblin_gold = 15;
