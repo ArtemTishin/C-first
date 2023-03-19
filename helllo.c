@@ -1,8 +1,31 @@
 #include <stdio.h> // preprocessor
+#include <string.h>
 
 int main(void)
 {
-    printf("Hello");
+    int len;
+    int length;
+    char name[8];
+
+    printf("What is yor name?\n");
+
+    // gets(name); // строковой -  заместо символьного getchar()(не использовать)
+
+    // scanf("%7s", name);
+
+    fgets(name, sizeof(name), stdin);
+
+    len = strlen(name);
+
+    printf("My name is %s\n", name);
+
+    // printf("%d", sizeof(name)); - размер массива
+
+    //   [a] [r] [t] [e] [m]
+    //    0   1   2   3   4
+
+    //   length = strlen(name);
+    //    printf("%d", length);
 
     /*
     int goblin_gold = 15;
